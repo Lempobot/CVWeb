@@ -239,23 +239,27 @@
 <form>
   <div class="form-group">
 
-    <input type="email" class="bg-dark form-control text-white" placeholder="name@mail.com">
+    <input required type="email" name="Email" class="bg-dark form-control text-white " placeholder="name@mail.com">
+    <span class="rq">*Required Field</span>
   </div>
   <br>
   <div class="row">
   <div class="col">
-    <input type="text" class="bg-dark form-control text-white" placeholder="First name">
+    <input required type="text" name="First name" class="bg-dark form-control text-white " placeholder="First name">
+    <span class="rq">*Required Field</span>
   </div>
   <div class="col">
-    <input type="text" class="bg-dark form-control text-white" placeholder="Last name">
+    <input required type="text" name="Last name" class="bg-dark form-control text-white " placeholder="Last name">
+    <span class="rq">*Required Field</span>
   </div>
   </div>
   <div class="form-group">
 
-    <textarea id = "contactText" class="bg-dark form-control text-white" rows="5" placeholder="Your request here."></textarea>
+    <textarea id = "contactText" maxlength="200" onkeyup="checkLength()" class="bg-dark form-control text-white" rows="5" placeholder="Your request here."></textarea>
+    <span name="charcount_text" id="charcount_text"></span>
   </div>
   <br>
-  <button type="submit" class="btn btn-light">Send</button>
+  <button type="submit" id="submitBtn" onsubmit="required()" class="btn btn-light">Send</button>
 </form>
 </div>
 <footer id="page-footer" class="text-light p-3 bg-dark d-flex justify-content-center">

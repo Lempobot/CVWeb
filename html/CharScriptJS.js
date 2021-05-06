@@ -19,7 +19,19 @@ function complete() {
 }
 
 //contact me
-var maxTextInput = document.getElementById("contactText").maxLength;
+
+function checkLength(){
+    var textArea = document.getElementById("contactText"),
+        count = textArea.value.length,
+        maxLength = textArea.maxLength,
+        remaining = maxLength - count,
+        charCount = document.getElementById("charcount_text")
+    if(remaining <= 0) {
+        charCount.innerHTML = maxLength + ' input limit reached'
+    } else {
+        charCount.innerHTML = 'input ' + remaining + ' remaining'
+    }
+}
 
 
 
