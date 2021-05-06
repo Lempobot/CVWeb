@@ -33,6 +33,14 @@ function checkLength(){
     }
 }
 
+//Back To Top
+
+// When the user clicks on the button, scroll to the top of the document
+document.getElementById("backToTop").addEventListener("click", topFunction)
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 // Get the modal
