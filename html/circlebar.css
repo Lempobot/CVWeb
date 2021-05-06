@@ -179,20 +179,20 @@ body{
 .progress-circle.p98 .value-bar { transform: rotate(353deg); }
 .progress-circle.p99 .value-bar { transform: rotate(356deg); }
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
 /* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
+#profilePic {
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#profilePic:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -201,6 +201,7 @@ body{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
 }
 
 /* Modal Content (Image) */
@@ -209,6 +210,7 @@ body{
     display: block;
     width: 80%;
     max-width: 700px;
+    z-index: 2;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -229,6 +231,7 @@ body{
     animation-duration: 0.6s;
 }
 
+/* Changes The Zoom Mechanic */
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
@@ -237,8 +240,8 @@ body{
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 7%;
+    right: 29%;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
