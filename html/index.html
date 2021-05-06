@@ -73,72 +73,34 @@
 
        <!-- Modal Content (The Image) -->
        <img class="modal-content" id="img01">
-
-
      </div>
   <div id="Skills" class="container mx-auto w-50 text-center">
   <br>
   <br>
   <br>
   <h1>Skills</h1>
-  <div class="row">
-    <div class="col">
-      <div class="progress-circle over50 p70 mx-auto">
-        <span>C++</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
+    <div class="container mx-auto col-10">
+      <div>Fishing</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+             aria-valuemin="0" aria-valuemax="100" id="fishing-bar"></div>
+      </div>
+      <div>Drifting</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+             aria-valuemin="0" aria-valuemax="100" id="drifting-bar"></div>
+      </div>
+      <div>Slacking off</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+             aria-valuemin="0" aria-valuemax="100" id="slacking-bar"></div>
+      </div>
+      <div>Apartment penetration</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+             aria-valuemin="0" aria-valuemax="100" id="penetration-bar"></div>
       </div>
     </div>
-    <div class="col">
-      <div class="progress-circle over50 p85 mx-auto">
-        <span>PHP</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="progress-circle over50 p100 mx-auto">
-        <span>HTML</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="progress-circle over50 p85 mx-auto">
-        <span>CSS</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="progress-circle over50 p65 mx-auto">
-        <span>Node.js</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="progress-circle over50 p70 mx-auto">
-        <span>Git</span>
-        <div class="left-half-clipper">
-          <div class="first50-bar"></div>
-          <div class="value-bar"></div>
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
   <div id="Education" class="container mx-auto my-3 w-50 text-center">
     <br>
@@ -290,7 +252,7 @@
   </div>
   <div class="form-group">
 
-    <textarea class="bg-dark form-control text-white" rows="5" placeholder="Your request here."></textarea>
+    <textarea id = "contactText" class="bg-dark form-control text-white" rows="5" placeholder="Your request here."></textarea>
   </div>
   <br>
   <button type="submit" class="btn btn-light">Send</button>
