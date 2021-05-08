@@ -46,7 +46,7 @@ function topFunction() {
 // Get the modal
     var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Get the image and insert it inside the modal
     var img = document.getElementById("profilePic");
     var modalImg = document.getElementById("img01");
     img.onclick = function () {
