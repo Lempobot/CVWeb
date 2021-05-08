@@ -1,7 +1,7 @@
 
 
 //skills
-const barData = {"fishing-bar": 70, "drifting-bar": 95, "slacking-bar": 45, "penetration-bar": 69}
+const barData = {"cpp": 95, "git": 80, "Full-Stack": 50, "Java": 80, "DevOps": 75}
 
 const barsByClass = document.getElementsByClassName("progress")
 
@@ -11,10 +11,9 @@ for (let i = 0; i<barsByClass.length; i++){
 }
 
 function complete() {
-    let barPosition = this.children[0].id;
+    let barPosition = this.children[0].id
     for (let i = 0; i < barData[barPosition]; i++) {
-        this.children[0].style.width = i.toString() + "%";
-        setTimeout(null, 7000);
+        this.children[0].style.width = i.toString() + "%"
     }
 }
 
@@ -27,9 +26,9 @@ function checkLength(){
         remaining = maxLength - count,
         charCount = document.getElementById("charcount_text")
     if(remaining <= 0) {
-        charCount.innerHTML = maxLength + ' input limit reached'
+        charCount.innerHTML = maxLength + ' too much words is UN-BASED'
     } else {
-        charCount.innerHTML = 'input ' + remaining + ' remaining'
+        charCount.innerHTML = 'chars ' + remaining + ' left'
     }
 }
 

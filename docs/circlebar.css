@@ -3,17 +3,20 @@ body{
      color: #ffffff;
 }
 
-#fishing-bar{
+#cpp{
     width: 0%;
 }
-#drifting-bar{
+#git{
     width: 0%;
 }
-#slacking-bar{
+#Full-Stack{
     width: 0%;
 }
-#penetration-bar{
+#Java{
     width: 0%;
+}
+#Java{
+    DevOps: 0%;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -95,6 +98,7 @@ body{
     cursor: pointer;
     font-size: 18px;
     color: white;
+
 }
 #backToTop:hover {
     opacity: 0.7;
